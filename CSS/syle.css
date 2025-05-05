@@ -1,0 +1,15 @@
+.encabezado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: chocolate;
+    width: auto;
+    height: 50px;
+}
+
+.TituloWebSite {
+
+    font-size: 30px;
+    color: white;
+    
+}
