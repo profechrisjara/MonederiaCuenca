@@ -7,6 +7,18 @@ body {
     background-color: #A67D44;    /*Color de fondo del body*/
 }
 
+/* Paginas en construccion */
+.image_en_construccion{
+    width: 100vw;
+    height: 100%;
+}
+.imageconstruccion{
+    aspect-ratio: 3/2;      /*mejorar la posición y distribución de la imagen del logo */
+    object-fit: contain;
+    width: 100vw;
+    height: 100%;
+}
+
 .encabezado {
     display: flex;
     justify-content: space-around;

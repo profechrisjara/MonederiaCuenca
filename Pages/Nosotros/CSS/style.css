@@ -1,0 +1,32 @@
+/* Paginas en construccion */
+.image_en_construccion{
+    position: relative;
+    width: 100vw;
+    height: 100%;
+}
+
+.imageconstruccion{
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Botón sobre la imagen */
+.btn-regresar {
+    position: absolute;
+    top: 350px;          /* Distancia desde la parte superior */
+    left: 200px;         /* Distancia desde la izquierda */
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    background-color: #899481;
+    color: #EFE9E1;
+    border: ;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.3s;
+}
+
+.btn-regresar:hover {
+    background-color: #5D1C34;
+}
