@@ -1,0 +1,92 @@
+html {
+    font-size: 62.5%; /* 62.5% de 16px = 10px Standarización de la unidad REM */
+}
+
+
+body {
+    background-color: #A67D44;    /*Color de fondo del body*/
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-around;
+    background-color: #11100f;  /* Color de la caja encabezado*/
+    width: 100vw;       /* Medida relativa para ocupar siempre todo el ancho del viewport */
+    height: 10vh;       /*Medida relativa para ocupar siempre un ancho dispuesto por el dispositivo */
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Caja contenedora de la imagen del logo */
+.logo_encabezado {
+    display: flex;
+    justify-content: left;
+    /* background-color: green; */
+    width: 30%;
+    height: 100%;
+}
+
+/* imagen del logo */
+.logo_monederiaCuenca {
+    aspect-ratio: 3/2;    
+    object-fit: contain; 
+    width: 100%;
+    height: 100%;
+    cursor: pointer;        /*El cursor de mouse cambia a una mano cuando nos posamos sobre el */
+}
+
+.descuento_encabezado {
+    /* background-color: aqua; */
+    width: 30%;
+    height: 100%;
+}
+
+.redesSociales_encabezado {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    /* background-color: red; */
+    width: 30%;
+    height: 100%;
+}
+
+/* Menú inicio */
+
+.navbar {
+    background-color: #11100f;
+    padding: 10px 0;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0 20px;
+}
+
+.nav-list a {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    transition: color 0.5s;
+}
+
+.nav-list a:hover {
+    color: #A67D44;
+    text-decoration: underline;
+}
+
+
+/* Hero */
+.Hero {
+
+}
+
+.imagenHero {
+    width: 100vw;
+    height: 100%;
+}
