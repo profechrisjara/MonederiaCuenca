@@ -23,7 +23,7 @@ body {
     display: flex;
     justify-content: space-around;
     background-color: #11100f;  /* Color de la caja encabezado*/
-    width: 100vw;       /* Medida relativa para ocupar siempre todo el ancho del viewport */
+    width: 99vw;       /* Medida relativa para ocupar siempre todo el ancho del viewport */
     height: 10vh;       /*Medida relativa para ocupar siempre un ancho dispuesto por el dispositivo */
     margin-top: 5px;
     margin-bottom: 5px;
@@ -65,7 +65,8 @@ body {
 /* Menú inicio */
 
 .navbar {
-    background-color: #11100f;
+    background-color: rgb(17, 16, 15);
+    margin-bottom: 5px;
     padding: 10px 0;
     position: relative;
 }
@@ -91,7 +92,7 @@ body {
 }
 
 .nav-list a:hover {
-    color: #A67D44;
+    color: rgb(166, 125, 68);
     text-decoration: underline;
 }
 
@@ -119,7 +120,7 @@ body {
 .nav-list {
     display: none;
     flex-direction: column;
-    background-color: #11100f;
+    background-color: rgb(17, 16, 15);
     position: absolute;
     top: 100%;
     left: 0;
@@ -137,11 +138,99 @@ body {
 
 
 /* Hero */
-.Hero {
 
+.Hero {
+    position: relative;
+    width: 99vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .imagenHero {
-    width: 100vw;
+    width: 99vw;
     height: 100%;
+    object-fit: cover;
+}
+
+
+/* GlassHero */
+.glassHero {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90vw;
+    height: 60vh;
+    background: rgba(17, 16, 15, 0.3);
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+/* Responsive para móviles */
+@media (max-width: 768px) {
+    .glassHero {
+        width: 90vw;
+        height: 60wh;
+        padding: 3rem 2rem;
+    }
+}
+
+/* Hero */
+.tituloHero {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: center;
+    align-items: flex-end;
+    text-align: right;
+    /* background-color: aqua; */
+    width: 50%;
+    height: 90%;
+    margin-top: 35vh;
+}
+
+/* Tamaño tipografia h1 */
+.TituloH1 {
+    font-size: 6rem;
+    margin: 0;
+}
+
+.heroH2 {
+    font-size: 2rem;
+    margin-top: -10px;
+}
+
+
+/* 📱 Media query para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    .tituloHero {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        margin-top: 5vh;
+    }
+
+.TituloH1 {
+    font-size: 3.5rem;
+    }
+
+.heroH2 {
+    font-size: 1.6rem;
+    margin-top: 0;
+    }
+}
+
+.ubicacionHero {
+/* background-color: red; */
+width: 50%;
+height: 90%;
 }
