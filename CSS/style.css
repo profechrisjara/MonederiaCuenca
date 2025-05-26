@@ -1,21 +1,23 @@
 html {
     font-size: 62.5%; /* 62.5% de 16px = 10px Standarización de la unidad REM */
+    overflow-x: hidden;     /*Evita el desbordamiento hacia la dercha */
 }
 
 
 body {
     background-color: #A67D44;    /*Color de fondo del body*/
+    overflow-x: hidden;     /*Evita el desbordamiento hacia la dercha */
 }
 
 /* Paginas en construccion */
 .image_en_construccion{
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 .imageconstruccion{
     aspect-ratio: 3/2;      /*mejorar la posición y distribución de la imagen del logo */
     object-fit: contain;
-    width: 100vw;
+    width: 100%;
     height: 100%;
 }
 
@@ -148,7 +150,7 @@ body {
 }
 
 .imagenHero {
-    width: 99vw;
+    width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -160,7 +162,7 @@ body {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 90vw;
+    width: 90%;
     height: 60vh;
     background: rgba(17, 16, 15, 0.3);
     border-radius: 15px;
@@ -186,7 +188,7 @@ body {
         align-items: center;
         justify-content: center;
         gap: 2rem;
-        width: 90vw;
+        width: 90%;
         height: auto;
         max-height: 60vh;
         padding: 3rem 2rem;
@@ -290,7 +292,7 @@ body {
     bottom:20vh; /* o ajusta según lo que necesites */
     left: 50%;
     transform: translateX(-50%);
-    width: 90vw;
+    width: 90%;
     height: 3rem;
     background-color: rgb(166, 125, 68, 0.6); /* puedes ajustar opacidad */
     padding: 1rem 2rem;
@@ -344,7 +346,7 @@ body {
         align-items: center;
         justify-content: center;
         height: auto;
-        padding: 1,5rem;
+        padding: 1.5rem;
         gap: 2rem;
 }
 
