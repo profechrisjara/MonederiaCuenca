@@ -167,6 +167,7 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border: 2px solid rgba(255, 255, 255, 0.3);
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -178,6 +179,10 @@ body {
 /* Responsive para móviles */
 @media (max-width: 768px) {
     .glassHero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
         width: 90vw;
         height: 60wh;
         padding: 3rem 2rem;
@@ -189,7 +194,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    align-items: center;
     align-items: flex-end;
     text-align: right;
     /* background-color: aqua; */
@@ -210,7 +214,7 @@ body {
 }
 
 
-/* 📱 Media query para pantallas pequeñas (móviles) */
+/* 📱 Media query para pantallas pequeñas (móviles) ubicacion*/
 @media (max-width: 768px) {
     .tituloHero {
         width: 90%;
@@ -229,8 +233,45 @@ body {
     }
 }
 
+/* ubicacion  */
 .ubicacionHero {
-background-color: red;
-width: 50%;
-height: 90%;
+/* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+    margin-top: 9vh;
+    margin-left: -20vh;
+    width: 50%;
+    height: 90%;
 }
+
+/* Boton Hero */
+.buttomubication {
+    position: relative;        /* Distancia desde la izquierda */
+    padding: 10px 20px;
+    font-size: 1.6rem;
+    background-color: #5D1C34;
+    color: #EFE9E1;
+    border: ;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 10;
+    transition: background-color 0.5s;
+}
+
+.buttomubication:hover {
+    background-color: #c1fa05;
+    color: #11100f;
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .ubicacionHero {
+        width: 90%;
+        align-items: center;
+        text-align: center;
+        margin-top: 5vh;
+    }
+}
+
