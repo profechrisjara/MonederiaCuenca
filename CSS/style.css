@@ -175,6 +175,7 @@ body {
     color: white;
     padding: 2rem;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    z-index: 10;
 }
 
 /* Responsive para móviles */
@@ -278,3 +279,93 @@ body {
     }
 }
 
+/* Boton de whatsapp */
+.WhatsappHero {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    position: absolute;
+    bottom:20vh; /* o ajusta según lo que necesites */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90vw;
+    height: 3rem;
+    background-color: rgb(166, 125, 68, 0.6); /* puedes ajustar opacidad */
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    z-index: 20;        /* mayor que .glassHero */
+    text-align: center;
+    border: 5px solid black;
+}
+
+.TextoWhatsappButtom {
+    color: azure;
+    font-size: 3rem;
+    margin: 0;
+}
+
+.Contenedormesajewhatsapp {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    /* background-color: red; */
+    width: 75%;
+    height: 100%;
+}
+
+.contenedorwhatsappButtom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: green; */
+    width: 25%;
+    height: 100%;
+}
+
+.botonWhatsapp {
+    background-color: rgb(20, 205, 75);
+    font-size: 2rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.botonWhatsapp:hover {
+    background-color: rgb(18, 138, 54);
+    font-size: 2.5rem;
+    border-radius: 2px;
+}
+
+
+@media (max-width: 768px) {
+    .WhatsappHero {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: auto;
+        padding: 1.5rem;
+        gap: 1rem;
+}
+
+
+.Contenedormesajewhatsapp,
+.contenedorwhatsappButtom {
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+.TextoWhatsappButtom {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+}
+
+.botonWhatsapp {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.5rem;
+}
+
+.botonWhatsapp:hover {
+    font-size: 1.8rem;
+}
+}
