@@ -219,18 +219,18 @@ body {
         margin-top: 5vh;
     }
 
-.TituloH1 {
-    font-size: 3.5rem;
+    .TituloH1 {
+        font-size: 3.5rem;
     }
 
-.heroH2 {
+    .heroH2 {
     font-size: 1.6rem;
     margin-top: 0;
     }
 }
 
 .ubicacionHero {
-/* background-color: red; */
+background-color: red;
 width: 50%;
 height: 90%;
 }
