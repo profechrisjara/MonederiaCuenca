@@ -142,7 +142,7 @@ body {
 
 .Hero {
     position: relative;
-    width: 99vw;
+    width: 100vw;
     height: 100vh;
     overflow: hidden;
 }
@@ -181,12 +181,14 @@ body {
 /* Responsive para móviles */
 @media (max-width: 768px) {
     .glassHero {
+        top: 30%;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 2rem;
         width: 90vw;
-        height: 60vh;
+        height: auto;
+        max-height: 60vh;
         padding: 3rem 2rem;
     }
 }
