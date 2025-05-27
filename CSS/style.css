@@ -195,17 +195,51 @@ body {
     }
 }
 
+/* Imagen de vista previa */
+
+
+.vistapreviamonederiacuenca {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.imagenVistaPrevia {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* responsive para la vista previa */
+
+
+@media (max-width: 768px) {
+    .vistapreviamonederiacuenca {
+        padding: 0.5rem;
+    }
+
+    .imagenVistaPrevia {
+        border-radius: 5px;
+    }
+}
+
+
+
 /* Hero */
 .tituloHero {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    align-items: flex-end;
+    justify-content: right;
+    align-items:center;
     text-align: right;
     /* background-color: aqua; */
     width: 50%;
     height: 90%;
-    margin-top: 35vh;
+    /* margin-top: 35vh; */
 }
 
 /* Tamaño tipografia h1 */
@@ -434,7 +468,7 @@ body {
 
 .botonbtndescargalibros:hover {
     background-color: azure;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: #5D1C34;
     border-radius: 5px;
     border: 2px solid #5D1C34;
