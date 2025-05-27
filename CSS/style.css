@@ -385,13 +385,12 @@ body {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
-    width: 90vw;
-    max-width: 1200px;
+    width: 90%;
     background: rgba(17, 108, 200, 0.4);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
     border-radius: 15px 15px 0 0;
-    border: 2px solid rgba(251, 255, 0, 0.7);
+    border: 2px solid rgb(240, 255, 255, 0.6);
     color: white;
     text-align: center;
     padding: 0.1px;
@@ -456,4 +455,13 @@ body {
         display: none;
         font-size: 1.4rem;
     }
+
+    .botonbtndescargalibros {
+        background-color: #5D1C34;
+    font-size: 1.8rem;
+    color: azure;
+    border-radius: 5px;
+    border: 1px solid azure;
+}
+
 }
